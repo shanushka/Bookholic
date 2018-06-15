@@ -1,0 +1,260 @@
+ <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+ -->
+<ngb-carousel >
+  <ng-template ngbSlide>
+    <img src="../assets/wallpapers.jpg" alt="Random first slide" width =100% class="wallpaper">
+    <div class="carousel-caption">
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="../assets/wallpaper4.jpg" alt="Random second slide" class="wallpaper">
+    <div class="carousel-caption">
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="../assets/wallpaper.jpg"  alt="Random third slide" class="wallpaper">
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>                                                                           
+
+<div class="container mt-5">
+ 	<div class="row">
+ 		<div *ngIf="myobj">
+ 		 <div class="list-inline">
+  			<div class="col-lg-3 col-md-6 list-inline-item" *ngFor="let obj of myobj"   (click)="onSelect(obj)"  >
+				<div class="col-md-14">
+ 					<div class="card " >
+ 					<img src="{{obj.img_url}} " class="card-img-top" >
+ 				
+ 					<div class="card-body">
+ 						<h5>{{obj.Title|uppercase}}</h5>
+ 						<h5>{{obj.Author}}</h5>
+ 						<h5>{{obj.Price}}</h5>
+
+ 						<button class="btn btn-danger">
+ 						<i class="fa fa-cart-plus" aria hidden="true">
+ 						</i>
+ 						Add to Cart
+ 						</button>
+ 					</div>
+ 					</div>
+ 				</div>
+ 		</div>
+ 		</div>
+ 		</div>
+ 	</div>
+</div>  
+
+
+<!-- <app-summary [selectedBook]="selectedBook"></app-summary> 
+ --><div class="container mt-5">
+	<div class="row">
+		<h3>Romance</h3>
+	</div>
+	<div class="row">
+		<div class="underline"></div>
+	</div>
+</div>
+
+<div class="container mt-5 pb-5">
+ 		<div class="row">
+ 			<div class="col-md-3">
+ 				<div class="card">
+ 					<img src=" ../assets/wallpaper.jpg" class="card-img-top">
+ 					<div class="card-body">
+ 						<h5>Books</h5>
+ 						<h5>45</h5>
+ 						<button class="btnbtn-danger">
+ 							<i class="fa fa-cart-plus" aria hidden="true">
+ 							</i>
+ 							Add to Cart
+ 						</button>
+ 				</div>
+ 			</div>
+ 		</div>
+ 				<div class="col-md-3">
+ 				<div class="card">
+ 					<img src=" ../assets/books.jpg" class="card-img-top">
+ 					<div class="card-body">
+ 						<h5>Books</h5>
+ 						<h5>45</h5>
+ 						<button class="btnbtn-danger">
+ 							<i class="fa fa-cart-plus" aria hidden="true">
+ 							</i>
+ 							Add to Cart
+ 						</button>
+ 				</div>
+ 			</div>
+ 	</div>
+</div>
+</div>
+<div class="container mt-5">
+	<div class="row">
+		<h3>Thriller</h3>
+	</div>
+	<div class="row">
+		<div class="underline"></div>
+	</div>
+</div>
+
+<div class="container mt-5 pb-5">
+ 		<div class="row">
+ 			<div class="col-md-3">
+ 				<div class="card">
+ 					<img src=" ../assets/thriller/hesaidshesaid.jpg" class="card-img-top" routerLink='/summary' >
+ 					<div class="card-body">
+ 						<h5>He said She Said</h5>
+ 						<h5>45</h5>
+ 						<h5>45</h5>
+ 						<button class="btn btn-danger">
+ 							<i class="fa fa-cart-plus" aria hidden="true">
+ 							</i>
+ 							Add to Cart
+ 						</button>
+ 				</div>
+ 			</div>
+ 		</div>
+ 				<div class="col-md-3">
+ 				<div class="card">
+ 					<img src=" ../assets/thriller/outsider.jpeg" class="card-img-top">
+ 					<div class="card-body">
+ 						<h5>Outsider</h5>
+ 						<h5>45</h5>
+ 						<button class="btn btn-danger">
+ 							<i class="fa fa-cart-plus" aria hidden="true">
+ 							</i>
+ 							Add to Cart
+ 						</button>
+ 				</div>
+ 			</div>
+ 	</div>
+ 	<div class="col-md-3">
+ 				<div class="card">
+ 					<img src=" ../assets/thriller/origin.jpg" class="card-img-top">
+ 					<div class="card-body">
+ 						<h5>Origin</h5>
+ 						<h5>45</h5>
+ 						<button class="btn btn-danger">
+ 							<i class="fa fa-cart-plus" aria hidden="true">
+ 							</i>
+ 							Add to Cart
+ 						</button>
+ 				</div>
+ 			</div>
+ 	</div>
+</div>
+</div>
+
+<div class="container mt-5">
+	<div class="row">
+		<h3>Comic</h3>
+	</div>
+	<div class="row">
+		<div class="underline"></div>
+	</div>
+</div> 
+
+<div class="container mt-5 pb-5">
+ 		<div class="row">
+ 			<div class="col-md-3">
+ 				<div class="card">
+ 					<img src=" ../assets/thriller/hesaidshesaid.jpg" class="card-img-top">
+ 					<div class="card-body">
+ 						<h5>He said She Said</h5>
+ 						<h5>45</h5>
+ 						<h5>45</h5>
+ 						<button class="btn btn-danger">
+ 							<i class="fa fa-cart-plus" aria hidden="true">
+ 							</i>
+ 							Add to Cart
+ 						</button>
+ 				</div>
+ 			</div>
+ 		</div>
+ 				<div class="col-md-3">
+ 				<div class="card">
+ 					<img src=" ../assets/thriller/outsider.jpeg" class="card-img-top">
+ 					<div class="card-body">
+ 						<h5>Outsider</h5>
+ 						<h5>45</h5>
+ 						<button class="btn btn-danger">
+ 							<i class="fa fa-cart-plus" aria hidden="true">
+ 							</i>
+ 							Add to Cart
+ 						</button>
+ 					</div>
+ 				</div>
+ 				</div>
+ 				<div class="col-md-3">
+ 				<div class="card">
+ 					<img src=" ../assets/thriller/origin.jpg" class="card-img-top">
+ 					<div class="card-body">
+ 						<h5>Origin</h5>
+ 						<h5>45</h5>
+ 						<button class="btn btn-danger">
+ 							<i class="fa fa-cart-plus" aria hidden="true">
+ 							</i>
+ 							Add to Cart
+ 						</button>
+ 				</div>
+ 			</div>
+ 	</div>
+</div>
+</div>
+
+
+<div class="container-fluid pt-5 pb-5">
+	<div class="container">
+		<div class=" row">
+			<div class="col-md-4">
+				<div class="row">
+					<h4>Top Selling Books of 2018</h4>
+				</div>
+				<div class="underline-green">
+				</div>
+				<div class ="media mt-5">
+					<img src="../assets/12rulesforlife.jpeg" class ="img-fluid mr-3" alt="media-img">
+					<div class="media-body mt-2">
+						<h5>jdfnb</h5>
+						<button class="btn btn-success"><i class=" fa fa-cart-plus" aria-hidden="true"></i>
+						Add to cart
+						</button>
+					</div>
+				</div>
+
+				<div class ="media mt-5">
+					<img src="../assets/fireandfury.jpg" class ="img-fluid mr-3" alt="media-img">
+					<div class="media-body mt-2">
+						<h5>jdfnb</h5>
+						<button class="btn btn-success"><i class=" fa fa-cart-plus" aria-hidden="true"></i>
+						Add to cart
+						</button>
+					</div>
+				</div>
+
+				<div class ="media mt-5">
+					<img src="../assets/books.jpg" class ="img-fluid mr-3" alt="media-img">
+					<div class="media-body mt-2">
+						<h5>jdfnb</h5>
+						<button class="btn btn-success"><i class=" fa fa-cart-plus" aria-hidden="true"></i>
+						Add to cart
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+ 

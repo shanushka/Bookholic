@@ -1,0 +1,21 @@
+.card:hover
+{
+	transform: scale(1.1);
+}
+
+.card-img-top
+{
+	max-height:320px;
+	
+}
+
+.wallpaper{
+	width:100%;
+	max-height:570px;
+}
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}

@@ -1,0 +1,38 @@
+<!-- <div class="topnav" id="myTopnav">
+<a routerLink= "/" >Home</a>
+<a routerLink="/contact" >Contact</a>
+<a routerLink="/about" >AboutUs</a>
+<a routerLink="/signin">Sign In</a>
+<input type="text" placeholder="Search..">
+
+</div> -->
+
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<span class="navbar-brand mb-0 h1">BookWorm</span>
+	<button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+	<div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse">
+		<a class="nav-item nav-link  text-white" routerLink="/" >
+			Home
+		</a>
+		<a class="nav-item nav-link  text-white" routerLink="/contact">
+	Contact
+		</a>
+		<a class="nav-item nav-link  text-white" routerLink="/about">
+			About 
+		</a>
+		<a class="nav-item nav-link  text-white" routerLink="/signin">
+		SignIn
+		</a>
+		<div class="abc">
+
+		<button class="nav-item btn btn-outline-warning ml-3 mr-3" id="btnsearch" style="float:right">Search</button></div>
+		
+	</div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

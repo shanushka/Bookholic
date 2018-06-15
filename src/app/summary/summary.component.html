@@ -1,0 +1,56 @@
+<!-- <div class="container">
+	<div class="image">
+		<img src='./assets/books.jpg'>
+	</div>
+	<div class="review">
+	<div  class="books">
+  	<div *ngFor="let b of books"  >
+	<h5>{{b.title}}</h5>
+	<p>
+	{{b.review}}</p>
+</div>
+</div> -->
+
+<!-- <h2>{{ selectedBook.title | uppercase }} </h2>
+
+<div>
+  <label>title:
+    <input [(ngModel)]="selectedBook.title" placeholder="name">
+  </label>
+</div> -->
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+           
+            {{displayItem.author}}
+        </div>
+       <div class="col" id="imagecol">
+        <div class="bookCoverContainer" >
+          <img src ="{{displayItem.img_url}}">
+          </div>
+      </div>
+       
+	<!-- <div *ngFor="let book of books"  >
+		{{book.id}}
+	</div> -->
+
+
+
+<div id="metacol" class="last col">
+	<h1 id ="bookTitle" class="bookTitle">
+		{{selectedTitleName}}
+	</h1>
+	<div id ="bookAuthors" class="stacked">
+		<span class ="by SmallText">by </span>
+		<span>{{displayItem.author}}</span>
+	</div>
+	<div class="descriptionContainer ">
+			{{displayItem.review}}
+	</div>
+
+</div>
+</div>
+    </div>
+
