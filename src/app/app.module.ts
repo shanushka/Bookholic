@@ -14,6 +14,7 @@ import { AngularFirestoreModule} from 'angularfire2/firestore';
 import { SigninComponent } from './signin/signin.component';
 import { SummaryComponent } from './summary/summary.component'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     SigninComponent,
     SummaryComponent,
+    SignupComponent,
 
 
   ],

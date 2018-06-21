@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import {HomeComponent } from './home/home.component';
 import { SigninComponent } from './signin/signin.component';
 import  { SummaryComponent } from'./summary/summary.component';
+import { SignupComponent } from './signup/signup.component';
 
 export const router:Routes =[
 {	
@@ -18,7 +19,10 @@ export const router:Routes =[
 {   path:'about',component:AboutComponent   },
 {   path:'contact',component:ContactComponent },
 {  path:'signin',component:SigninComponent    },
- {  path:'summary',component:SummaryComponent}
+ {  path:'summary',component:SummaryComponent},
+ {
+ 	path:'signup',component:SignupComponent
+ }
 
 ];
  export const routes:ModuleWithProviders=RouterModule.forRoot(router);

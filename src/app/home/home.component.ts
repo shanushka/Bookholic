@@ -23,11 +23,7 @@ myobj:any[];
 constructor(private router:Router,private serverService:ServerService){}
 
 
- onSelect(obj:Book): void {
-  this.selectedBook = obj;
-  console.log(obj)
-   this.router.navigate(['/summary',obj.title])
-  }
+
 
 ngOnInit()
 {
@@ -42,7 +38,12 @@ ngOnInit()
 
 }
 
-
+ onSelect(obj:Book): void {
+  this.selectedBook = obj;
+  console.log(obj)
+  console.log(obj.Title)
+   this.router.navigate(['/summary',obj.Title])
+  }
 
  
  

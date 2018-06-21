@@ -1,6 +1,6 @@
 .form-container {
     display:block;
-    width:100%;
+    width:50%;
     padding:2em;
     margin: 2em auto;
     background:#fff;
@@ -15,7 +15,7 @@
     display: inline-block;
     animation: 2s alertAnim forwards;
 }
-
+/*
 .button {
     margin-top: 3rem;
 }
@@ -31,4 +31,46 @@ h1 {
     position: relative;
     top:150px;
 
+}
+#id
+{
+     padding-top: 87px;
+}*/
+
+#signin {
+      padding-top: 87px;
+}
+
+.signUpOption {
+    text-align: center;
+    margin-top: 24px;
+}
+fieldset {
+    border: none;
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+label
+{
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    color: #333;
+    font-weight: bold;
+    width: 100%;
+}
+
+body{
+    background-image: url(/assets/background.jpg);
+   background-position-x: 100%;
+  background-position-y: 100%;
+  background-size: cover;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
 }

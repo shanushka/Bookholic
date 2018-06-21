@@ -1,6 +1,6 @@
 export class Book{
 	id:number;
-	title:string;
+	Title:string;
 	author:string;
 	img_url:string;
 	price:number;

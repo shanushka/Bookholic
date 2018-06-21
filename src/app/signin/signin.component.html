@@ -1,94 +1,17 @@
-<!-- 
-
-
-
-
-
-
-
-
-
-
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-</form>
-
-
-
-
-
-
-
-
-<div <center></center>
- -->
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<body class='textured'>
  <div *ngIf="!name; else forminfo">
-  <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+  <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)" id="signin">
     <div class="form-container">
+      <fieldset>
       <div class="row columns">
-        <h1>Review Section</h1>
-        <label>Name
+        <h1> Sign In </h1>
+       <!--  <label>Name
           <input type="text" formControlName="name" >
         </label>
         <div class="alert" *ngIf ="!rForm.controls['name'].valid && rForm.controls['name'].touched">{{titleAlert}}
-        </div>
+        </div> -->
 
           <label>Email
           <input type="email" formControlName="email">
@@ -96,7 +19,14 @@
           <div class="alert" *ngIf ="!rForm.controls['email'].valid && rForm.controls['email'].touched">
             Please type your email
         </div>
-        <label>Description
+
+        <label>Password
+          <input type="password" formControlName="password">
+        </label>
+        <div class="alert" *ngIf ="!rForm.controls['password'].valid && rForm.controls['password'].touched">
+          enter your password
+        </div> 
+     <!--    <label>Description
           <textarea  formControlName="description"></textarea>
         </label>
                <div class="alert" *ngIf ="!rForm.controls['description'].valid && rForm.controls['description'].touched">You must specify description that must be between 30 to 500
@@ -104,13 +34,23 @@
 
 
         <label for="validate">Minimum of 3 Characters</label>
-        <input type="checkbox" name="validate" formControlName="validate" value="1"> On
+        <input type="checkbox" name="validate" formControlName="validate" value="1"> On -->
         
         <input type="submit" class="button expanded" value="Submit Form" [disabled]="!rForm.valid" >
       </div>
+      </fieldset>
     </div>
   </form>
 </div>
+
+<div class="signUpOption ">
+  <span>
+    "
+Not a member
+    "
+  </span>
+  <a routerLink="/signup">Sign up</a>
+  </div>
 
 <ng-template #forminfo>
   <div class="form-container">
@@ -121,6 +61,7 @@
     </div>
   </div>
 </ng-template>
+</body>
  <!--<input type="button" class="button expanded" value="Books" (click)="getBooks()">
 <h1>{{ my_obj.title}}y</h1>
 

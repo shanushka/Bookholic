@@ -24,16 +24,17 @@ export class SigninComponent  {
 		console.log(this.courses);
  	})*/
  	 this.rForm=fb.group({
- 	'name':[null, Validators.required],
+ 	//'name':[null, Validators.required],
  	'email':[null,Validators.compose([Validators.required,Validators.email])],
- 	'description':[null, Validators.compose([Validators.required,Validators.minLength(30),Validators.maxLength(500)])],
- 	'validate':''
+ 	/*'description':[null, Validators.compose([Validators.required,Validators.minLength(30),Validators.maxLength(500)])],
+ 	'validate':''*/
+ 	'password':[null,Validators.required]
  	
  });
 }
 ngOnInit()
 {
-	this.rForm.get('validate').valueChanges.subscribe(
+	/*this.rForm.get('validate').valueChanges.subscribe(
 	(validate)=> {
 		if(validate=='1')
 		{
@@ -46,14 +47,14 @@ ngOnInit()
 		this.rForm.get('name').updateValueAndValidity();
 	}
 
-	)
+	)*/
 }
 
  addPost(post)
 
 {
-	this.description=post.description;
-	this.name=post.name;
+	//this.description=post.description;
+	this.email=post.email;
     this.serverService.storeServers(post)
 	.subscribe(
 		
